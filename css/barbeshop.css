@@ -1,14 +1,14 @@
-body {
-	min-width: 1122px;
-	min-height: 1750px;
-	margin: 0;
-	padding: 0;
-}
 
 body {
-	background: #000000 url("../img/fondo.png") no-repeat 50% 3px;
+	min-width: 960px;
+	background: #000000 url("../img/fondo.png") no-repeat center top;
 	background-size: 1122px auto;
 	color: white;
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 24px;
+	text-transform: uppercase;
 }
 
 .container {
@@ -25,11 +25,13 @@ clearfix::after {
 
 .main-header {
 	margin-bottom: 60px;
+	color: #ffffff;
+	background-color: #000000;
 }
 
 .index-logo {
 	width: 368px;
-	height: 204px;
+	min-height: 204px;
 	margin: 0 auto;
 	margin-bottom: 25px;
 }
@@ -39,9 +41,60 @@ clearfix::after {
 	width: 780px;
 }
 
+.main-navigation a {
+	display: block;
+	color: #ffffff;
+	text-decoration: none;
+	padding: 25px 20px;
+}
+
+.main-navigation a:hover {
+	background: #242424;
+}
+
+.main-navigation ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 0;
+}
+
+.main-navigation li {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 16px;
+	line-height: 20px;
+}
+
 .user-block {
 	float: right;
-	min-height: 70px;
+	max-width: 140px;
+}
+
+.login {
+	position: relative;
+	display: inline-block;
+	padding: 25px 20px;
+	padding-left: 50px;
+	font-size: 16px;
+	line-height: 20px;
+	vertical-align: top;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.login:hover {
+	background-color: #242424;
+}
+
+.login::before {
+	position: absolute;
+	top: 28px;
+	left: 20px;
+	content: "";
+	width: 18px;
+	height: 18px;
+	background: transparent url("img/sprite.png") no-repeat;
 }
 
 div.main-menu nav ul {
@@ -65,29 +118,62 @@ div.main-menu nav ul li a {
 }
 
 .features-item {
+	display: block;
 	width: 300px;
 	float: left;
 	margin-right: 20px;
+	text-align: center;
 }
 
 .features-item:last-child {
 	margin-right: 0;
 }
 
+.features-name {
+	display: block;
+	position: relative;
+	margin-bottom: 30px;
+	padding-bottom: 35px;
+	font-size: 30px;
+	line-height: 42px;
+}
+
+.features-name::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	
+	display: block;
+	width: 20px;
+	height: 20px;
+	margin-left: -10px;
+	background-color: #ffffff;
+	transform: rotate(45deg);
+}
+
+.features-item p {
+	margin: 10px;
+	margin-bottom: 0;
+}
+
 .index-content {
 	padding: 50px 80px;
 	margin-bottom: 35px;
+	color: #000000;
+	background: #f8f5f2 url("../img/arena.jpg");
 }
 
 .index-content-left {
 	width: 380px;
 	float: left;
+	min-height: 330px;
 }
 
 .index-content-right {
 	width: 300px;
 	float: right;
-	border: 1px solid red;
+	min-height: 330px;
 }
 
 .main-footer {

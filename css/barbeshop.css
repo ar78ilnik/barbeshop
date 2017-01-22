@@ -362,19 +362,19 @@ body {
 
 .social-btn {
   display: inline-block;
-  width: 43px;
-  height: 43px;
+  width: 25px;
+  height: 25px;
   margin: 0 2px;
 
   font-size: 0;
   vertical-align: top;
   text-decoration: none;
 
-  background: #000000 url("img/sprite.png") no-repeat center;
+  background: #000000 url("../img/spritesheet.png") no-repeat center;
   
-  transition: 
+  /*transition: 
     background-position 0.5s,
-    background-color 0.5s;
+    background-color 0.5s;*/
 }
 
 .social-btn:hover {
@@ -382,27 +382,27 @@ body {
 }
 
 .social-btn-vk {
-  background-position: 9px -447px;
+  background-position: 0px -11px;
 }
 
 .social-btn-fb {
-  background-position: 15px -171px;
+  background-position: 0px -96px;
 }
 
 .social-btn-inst {
-  background-position: 12px -313px;
+  background-position: 0px -53px;
 }
 
 .social-btn-vk:hover {
-  background-position: 9px -381px;
+  background-position: 0px 4px;
 }
 
 .social-btn-fb:hover {
-  background-position: 15px -100px;
+  background-position: 0px -74px;
 }
 
 .social-btn-inst:hover {
-  background-position: 12px -242px;
+  background-position: 0px -32px;
 }
 
 .footer-copyright p {
